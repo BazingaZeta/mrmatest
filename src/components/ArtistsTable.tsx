@@ -3,12 +3,12 @@ import { Table } from "@nextui-org/react";
 import { Composition } from "@/types/compositions/Composition";
 import formatDate from "../utils/formatDate";
 
-type BasicCardProps = {
+type ArtistsTableProps = {
   columns: string[];
   data: Composition[];
 };
 
-const BasicTable = ({ columns, data }: BasicCardProps) => {
+const ArtistsTable = ({ columns, data }: ArtistsTableProps) => {
   return (
     <Table
       aria-label="Example static collection table with multiple selection"
@@ -36,4 +36,4 @@ const BasicTable = ({ columns, data }: BasicCardProps) => {
   );
 };
 
-export default BasicTable;
+export default ArtistsTable;
