@@ -1,4 +1,4 @@
-import BasicTable from "@/components/BasicTable";
+import ArtistsTable from "@/components/ArtistsTable";
 import { Input } from "@nextui-org/react";
 import { Inter } from "next/font/google";
 import { useState } from "react";
@@ -21,7 +21,7 @@ export default function Home() {
         labelPlaceholder="Search..."
         color="default"
       />
-      <BasicTable
+      <ArtistsTable
         columns={columns}
         data={
           (query &&
