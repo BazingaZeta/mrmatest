@@ -1,6 +1,5 @@
 import ArtistsTable from "@/components/ArtistsTable";
 import { Input } from "@nextui-org/react";
-import { Inter } from "next/font/google";
 import { useState } from "react";
 import { Composition } from "../types/compositions/Composition";
 import API_RESPONSE from "./api/API_RESPONSE.json";
@@ -14,13 +13,16 @@ export default function Home() {
   );
 
   return (
-    <main className="flex min-h-screen flex-col items-left p-10">
-      <Input
-        onChange={(event) => setQuery(event.target.value)}
-        bordered
-        labelPlaceholder="Search..."
-        color="default"
-      />
+    <main className="flex flex-col p-10">
+      <div className="flex flex-col pb-10">
+        <Input
+          onChange={(event) => setQuery(event.target.value)}
+          bordered
+          labelPlaceholder="Search..."
+          color="default"
+        />
+      </div>
+
       <ArtistsTable
         columns={columns}
         data={

@@ -15,6 +15,7 @@ const ArtistsTable = ({ columns, data }: ArtistsTableProps) => {
       css={{
         height: "auto",
         minWidth: "100%",
+        paddingTop: 10,
       }}
       selectionMode="multiple"
     >
